@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mukeshkumar M — Data Scientist Portfolio</title>
+<meta name="description" content="Portfolio of Mukeshkumar M — Data Analyst & Data Science enthusiast skilled in Python, SQL, Power BI, Excel and Machine Learning." />
+<meta name="author" content="Mukeshkumar M" />
+<meta name="keywords" content="Mukeshkumar M, Data Analyst, Data Science, Power BI, SQL, Python, Portfolio" />
+<meta property="og:title" content="Mukeshkumar M — Data Analyst Portfolio" />
+<meta property="og:description" content="Aspiring Data Analyst — Python, SQL, Power BI, Machine Learning." />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/jpeg" href="mukeshkumar.jpeg" />
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-ring"></div>
+  <div class="loader-text">LOADING PORTFOLIO</div>
+</div>
+
+<!-- Custom cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- 3D background -->
+<canvas id="bg-canvas"></canvas>
+<div class="bg-gradient-overlay"></div>
+
+<!-- Toast -->
+<div id="toast" class="toast"><i class="fas fa-check-circle"></i><span>Done!</span></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">MK<span style="color:var(--neon-blue)">.</span></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#internship">Internship</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-img-wrap reveal">
+    <img src="mk-hero.jpeg" alt="Mukeshkumar M" class="hero-img" />
+  </div>
+  <div class="hero-text reveal">
+    <div class="greet">Hi, I'm</div>
+    <h1>Mukeshkumar <span>M</span></h1>
+    <div class="typing" id="typing"></div>
+    <!-- <p class="hero-desc">I transform raw data into meaningful business insights using Python, SQL, Power BI and Machine Learning — building dashboards and predictive models that drive decisions.</p> -->
+    <div class="btn-row">
+      <a href="Mukeshkumar_M_Resume.pdf" download="Mukeshkumar_M_Resume.pdf" class="btn btn-primary"><i class="fas fa-download"></i> Download Resume</a>
+      <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Hire Me</a>
+    </div>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/mukeshkumar-m-0211004mk/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/Mukesh0228" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:mukeshk7660@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+  
+</section>
+
+<!-- About -->
+<section id="about">
+  <h2 class="section-title reveal">About Me</h2>
+  <p class="section-sub reveal">Get to know the person behind the data</p>
+  <div class="about-grid">
+    <img src="mk-about.jpeg" alt="Mukeshkumar M" class="about-img glass reveal" />
+    <div class="about-text reveal">
+      <p>I am an Aspiring <strong>Data Scientist</strong> with a strong foundation in Python, SQL, Statistics, Machine Learning, Big Data, Hadoop, PySpark, Snowflake, and Data Visualization. Skilled in data preprocessing, exploratory data analysis (EDA), feature engineering, building predictive models, and extracting meaningful insights from complex datasets.</p>
+      <p>Hands-on experience developing end-to-end projects involving regression models, classification algorithms, machine learning workflows, and interactive dashboards using Power BI. Passionate about solving real-world problems through data-driven solutions and continuously learning advanced technologies in the data science ecosystem.</p>
+      <div class="counters">
+        <div class="counter glass tilt"><div class="num" data-target="9">0</div><div class="lbl">Projects Completed</div></div>
+        <div class="counter glass tilt"><div class="num" data-target="15">0</div><div class="lbl">Certifications</div></div>
+        <div class="counter glass tilt"><div class="num" data-target="20">0</div><div class="lbl">Technical Skills</div></div>
+        <div class="counter glass tilt"><div class="num" data-target="10">0</div><div class="lbl">Tools Learned</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Internship -->
+<section id="internship">
+  <h2 class="section-title reveal">Internship</h2>
+  <p class="section-sub reveal">Industry experience & training</p>
+  <div class="timeline">
+    <div class="tl-item reveal">
+      <div class="tl-card glass">
+        <div class="year">Data Science / Data Analyst Intern</div>
+        <h3>QSpiders, BTM Layout, Bengaluru</h3>
+        <ul class="features" style="margin-top:.8rem">
+          <li>Gained hands-on experience in Data Science, Data Analytics, and Machine Learning concepts.</li>
+          <li>Worked with Python, SQL, Excel, and Power BI for data processing, analysis, and visualization.</li>
+          <li>Performed data cleaning, exploratory data analysis (EDA), feature engineering, and predictive modeling on datasets.</li>
+          <li>Developed interactive Power BI dashboards using Power Query, DAX, charts, slicers, and KPI cards.</li>
+          <li>Applied machine learning algorithms for classification and regression-based projects.</li>
+        </ul>
+        <div class="chips" style="margin-top:1rem">
+          <span class="chip">Python</span><span class="chip">Machine Learning</span><span class="chip">Snowflake</span><span class="chip">Big Data</span><span class="chip">Power BI</span><span class="chip">Excel</span><span class="chip">SQL</span>
+        </div>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-card glass">
+        <div class="year">Front-End Development Intern</div>
+        <h3>8Queens Software Technologies Private Limited</h3>
+        <ul class="features" style="margin-top:.8rem">
+          <li>Developed responsive and interactive web pages using HTML, CSS, and JavaScript.</li>
+          <li>Designed user-friendly interfaces with modern layouts, animations, and styling techniques.</li>
+          <li>Implemented JavaScript functionality, DOM manipulation, forms, and event handling to improve user experience.</li>
+          <li>Built front-end projects including portfolio websites, landing pages, and web applications.</li>
+          <li>Improved understanding of responsive design principles and web development workflows.</li>
+        </ul>
+        <div class="chips" style="margin-top:1rem">
+          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Responsive Web Design</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <h2 class="section-title reveal">Technical Skills</h2>
+  <p class="section-sub reveal">Tools & technologies I work with</p>
+  <div class="skills-grid">
+    <div class="skill-card glass tilt reveal">
+      <h3><i class="fas fa-code"></i> Programming Languages</h3>
+      <div class="chips">
+        <span class="chip">Python</span><span class="chip">SQL</span>
+      </div>
+    </div>
+    <div class="skill-card glass tilt reveal">
+      <h3><i class="fas fa-database"></i> Statistics & Mathematics</h3>
+      <div class="chips">
+        <span class="chip">Descriptive Statistics</span><span class="chip">Inferential Statistics</span><span class="chip">Probability</span><span class="chip">Hypothesis Testing</span><span class="chip">Linear Algebra</span>
+      </div>
+    </div>
+    <div class="skill-card glass tilt reveal">
+      <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+      <div class="chips">
+        <span class="chip">Regression</span><span class="chip">Classification</span><span class="chip">Data Preprocessing</span>
+        <span class="chip">Feature Engineering</span><span class="chip">Model Building</span><span class="chip">Model Evaluation</span>
+      </div>
+    </div>
+    <div class="skill-card glass tilt reveal">
+      <h3><i class="fas fa-database"></i> Big Data Technologies</h3>
+      <div class="chips">
+        <span class="chip">Hadoop</span><span class="chip">HDFS</span><span class="chip">MapReduce</span><span class="chip">Apache Spark</span><span class="chip">PySpark</span>
+      </div>
+    </div>
+    <div class="skill-card glass tilt reveal">
+      <h3><i class="fas fa-database"></i> Database & Data Warehousing</h3>
+      <div class="chips">
+        <span class="chip">SQL(SQL*Plus)</span><span class="chip">Snowflake</span><span class="chip">DBMS</span><span class="chip">RDBMS</span>
+      </div>
+    </div>
+    <div class="skill-card glass tilt reveal">
+      <h3><i class="fas fa-chart-bar"></i> Data Analysis & Visualization</h3>
+      <div class="chips">
+        <span class="chip">Power BI</span><span class="chip">Microsoft Excel</span><span class="chip">Pivot Tables</span>
+        <span class="chip">Data Cleaning</span><span class="chip">Data Modeling</span>
+      </div>
+    </div>
+    <div class="skill-card glass tilt reveal">
+      <h3><i class="fab fa-python"></i> Python Libraries</h3>
+      <div class="chips">
+        <span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span>
+        <span class="chip">Seaborn</span><span class="chip">Scikit-learn</span>
+      </div>
+    </div>
+    
+    <div class="skill-card glass tilt reveal">
+      <h3><i class="fas fa-chart-pie"></i> BI Tools</h3>
+      <div class="chips">
+        <span class="chip">Power Query</span><span class="chip">DAX</span><span class="chip">KPI Cards</span><span class="chip">Interactive Dashboards</span>
+      </div>
+    </div>
+    <div class="skill-card glass tilt reveal">
+      <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+      <div class="chips">
+        <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Responsive Web Design</span>
+      </div>
+    </div>
+    <div class="skill-card glass tilt reveal">
+      <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+      <div class="chips">
+        <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS Code</span><span class="chip">Jupyter Notebook</span><span class="chip">Power BI Desktop</span>
+      </div>
+    </div>
+    <div class="skill-card glass tilt reveal">
+      <h3><i class="fas fa-cogs"></i> Core Concepts</h3>
+      <div class="chips">
+        <span class="chip">OOPs</span><span class="chip">Data Structures Basics</span><span class="chip">ETL Process</span><span class="chip">Data Science Pipeline</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <h2 class="section-title reveal">Projects</h2>
+  <p class="section-sub reveal">A showcase of my recent work</p>
+  <div class="projects-grid">
+
+    <div class="project-card glass tilt reveal">
+      <div class="project-icon"><i class="fas fa-home"></i></div>
+      <h3>House Price Prediction</h3>
+      <div class="chips"><span class="chip">Python</span><span class="chip">ML</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Scikit-Learn</span><span class="chip">Matplotlib</span></div>
+      <p class="desc">Developed a Machine Learning regression model to predict house prices using property datasets. Implemented data preprocessing, feature engineering, visualization, model training, and performance evaluation.</p>
+      <ul class="features"><li>Data Cleaning</li><li>EDA</li><li>Regression Model</li><li>Prediction System</li><li>Model Evaluation</li></ul>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="https://github.com/Mukesh0228/House-price-prediction" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        <a class="btn btn-primary" href="https://github.com/Mukesh0228/House-price-prediction" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
+      </div>
+    </div>
+
+    <div class="project-card glass tilt reveal">
+      <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+      <h3>Citizen Health Analysis</h3>
+      <div class="chips"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">ML</span></div>
+      <p class="desc">Created a healthcare analytics project to analyze citizen health data, identify patterns, and generate meaningful insights using data analysis techniques.</p>
+      <ul class="features"><li>Healthcare Data Analysis</li><li>Data Processing</li><li>Visualization</li><li>Pattern Analysis</li><li>Insight Generation</li></ul>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="https://github.com/Mukesh0228/Citizen-Health" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        <a class="btn btn-primary" href="https://github.com/Mukesh0228/Citizen-Health" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
+      </div>
+    </div>
+
+    <div class="project-card glass tilt reveal">
+      <div class="project-icon"><i class="fas fa-users"></i></div>
+      <h3>IBM HR Analytics Dashboard</h3>
+      <div class="chips"><span class="chip">Power BI</span><span class="chip">Excel</span><span class="chip">Power Query</span><span class="chip">DAX</span></div>
+      <p class="desc">Built an interactive HR analytics dashboard analyzing employee attrition, workforce trends, department performance, and employee insights.</p>
+      <ul class="features"><li>Power Query Cleaning</li><li>KPI Cards</li><li>DAX Measures</li><li>Interactive Reports</li><li>HR Insights</li></ul>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="https://github.com/Mukesh0228/IBM-HR" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        <a class="btn btn-primary" href="https://github.com/Mukesh0228/IBM-HR" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
+      </div>
+    </div>
+
+    <div class="project-card glass tilt reveal">
+      <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+      <h3>Zepto Sales Dashboard</h3>
+      <div class="chips"><span class="chip">Power BI</span><span class="chip">Excel</span><span class="chip">Power Query</span><span class="chip">DAX</span></div>
+      <p class="desc">Developed a sales analytics dashboard to analyze revenue, product performance, customer behavior, and business KPIs.</p>
+      <ul class="features"><li>Sales Tracking</li><li>Dashboard Design</li><li>Data Transformation</li><li>Business Insights</li></ul>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="https://github.com/Mukesh0228/Zepto-Sales" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        <a class="btn btn-primary" href="https://github.com/Mukesh0228/Zepto-Sales" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
+      </div>
+    </div>
+
+    <div class="project-card glass tilt reveal">
+      <div class="project-icon"><i class="fas fa-book"></i></div>
+      <h3>Library Management System</h3>
+      <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+      <p class="desc">Designed a responsive library management web application for managing books and creating an interactive user experience.</p>
+      <ul class="features"><li>Add Books</li><li>Manage Records</li><li>Responsive UI</li><li>JavaScript Logic</li></ul>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="https://github.com/Mukesh0228/Library-Book-Catalogue" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        <a class="btn btn-primary" href="https://github.com/Mukesh0228/Library-Book-Catalogue" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
+      </div>
+    </div>
+
+    <div class="project-card glass tilt reveal">
+      <div class="project-icon"><i class="fas fa-calendar-alt"></i></div>
+      <h3>Event Management Website</h3>
+      <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+      <p class="desc">Created a modern event management website with responsive design, interactive components, and attractive UI.</p>
+      <ul class="features"><li>Event Display</li><li>Modern Design</li><li>Animations</li><li>User Interaction</li></ul>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="https://github.com/Mukesh0228/Event-Management" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        <a class="btn btn-primary" href="https://github.com/Mukesh0228/Event-Management" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
+      </div>
+    </div>
+
+    <div class="project-card glass tilt reveal">
+      <div class="project-icon"><i class="fas fa-spray-can"></i></div>
+      <h3>Perfumy Website</h3>
+      <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span></div>
+      <p class="desc">Developed a responsive perfume product website with attractive layouts and product showcase sections.</p>
+      <ul class="features"><li>Product Cards</li><li>Navigation</li><li>Responsive Design</li></ul>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="https://github.com/Mukesh0228/Perfumy-HTML-CSS" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        <a class="btn btn-primary" href="https://github.com/Mukesh0228/Perfumy-HTML-CSS" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
+      </div>
+    </div>
+
+    <div class="project-card glass tilt reveal">
+      <div class="project-icon"><i class="fas fa-calculator"></i></div>
+      <h3>Calculator Application</h3>
+      <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+      <p class="desc">Created a calculator web application with mathematical operations using JavaScript functionality.</p>
+      <ul class="features"><li>Arithmetic Operations</li><li>Interactive Buttons</li><li>Clean UI</li></ul>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="https://github.com/Mukesh0228/Calculator" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        <a class="btn btn-primary" href="https://github.com/Mukesh0228/Calculator" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
+      </div>
+    </div>
+
+    <div class="project-card glass tilt reveal">
+      <div class="project-icon"><i class="fas fa-plane"></i></div>
+      <h3>Travel Landing Page</h3>
+      <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span></div>
+      <p class="desc">Designed a responsive travel landing page with modern UI, destination sections, and attractive styling.</p>
+      <ul class="features"><li>Landing Page</li><li>CSS Animations</li><li>Responsive Layout</li></ul>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="https://github.com/Mukesh0228/Landing-Page" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        <a class="btn btn-primary" href="https://github.com/Mukesh0228/Landing-Page" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+  <h2 class="section-title reveal">Education</h2>
+  <p class="section-sub reveal">My academic journey</p>
+  <div class="timeline">
+    <div class="tl-item reveal">
+      <div class="tl-card glass">
+        <div class="year">Graduation: 2026 · CGPA: 8.7/10</div>
+        <h3>Bachelor of Engineering (B.E.) – Computer Science and Engineering</h3>
+        <div style="color:var(--neon-blue);font-weight:600;margin:.3rem 0 .8rem">Sengunthar Engineering College (Autonomous) — Tiruchengode, Tamil Nadu</div>
+        <ul class="features">
+          <li>Built a strong foundation in programming, database management, data structures, software development, and computer science fundamentals.</li>
+          <li>Gained practical experience through academic projects involving Python, SQL, data analytics, machine learning, and web technologies.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-card glass">
+        <div class="year">Completed: 2022 · 83%</div>
+        <h3>Higher Secondary Certificate (12th Standard)</h3>
+        <div style="color:var(--neon-blue);font-weight:600;margin:.3rem 0 .8rem">Little Flower Matric Higher Secondary School — Thalaivasal, Tamil Nadu</div>
+        <ul class="features">
+          <li>Completed higher secondary education with a focus on Mathematics and Computer Science concepts.</li>
+          <li>Developed analytical thinking, problem-solving abilities, and fundamental technical knowledge.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-card glass">
+        <div class="year">Completed: 2020 · 83%</div>
+        <h3>Secondary School Leaving Certificate (10th Standard)</h3>
+        <div style="color:var(--neon-blue);font-weight:600;margin:.3rem 0 .8rem">Jayam Matric Higher Secondary School — Thalaivasal, Tamil Nadu</div>
+        <ul class="features">
+          <li>Completed secondary education with strong academic performance across science, mathematics, and core subjects.</li>
+          <li>Developed discipline, communication skills, and a foundation for higher technical education.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certificates -->
+<section id="certificates">
+  <h2 class="section-title reveal">Certificates</h2>
+  <p class="section-sub reveal">Continuous learning & achievements</p>
+  <div class="cert-grid">
+    <div class="cert-card glass tilt reveal"><i class="fas fa-certificate"></i><div><h4>Data Analytics Certification</h4><p>Foundations of analytics</p></div></div>
+    <div class="cert-card glass tilt reveal"><i class="fas fa-certificate"></i><div><h4>Data Science Certification</h4><p>Core ML & Python</p></div></div>
+    <div class="cert-card glass tilt reveal"><i class="fas fa-medal"></i><div><h4>Power BI Certification</h4><p>Dashboards & DAX</p></div></div>
+    <div class="cert-card glass tilt reveal"><i class="fas fa-medal"></i><div><h4>SQL Certification</h4><p>Queries & Joins</p></div></div>
+    <div class="cert-card glass tilt reveal"><i class="fas fa-briefcase"></i><div><h4>Internship Certificate</h4><p>Hands-on industry experience</p></div></div>
+    <div class="cert-card glass tilt reveal"><i class="fas fa-briefcase"></i><div><h4>Job Simulation</h4><p>Forage virtual experience</p></div></div>
+    <div class="cert-card glass tilt reveal"><i class="fas fa-award"></i><div><h4>Python Certification</h4><p>Programming fundamentals</p></div></div>
+    <div class="cert-card glass tilt reveal"><i class="fas fa-award"></i><div><h4>ML Certification</h4><p>Regression & Classification</p></div></div>
+  </div>
+</section>
+
+<!-- Resume -->
+<section id="resume">
+  <h2 class="section-title reveal">Resume</h2>
+  <p class="section-sub reveal">Download my full resume</p>
+  <div class="resume-card glass tilt reveal">
+    <div class="resume-icon"><i class="fas fa-file-pdf"></i></div>
+    <h3>Mukeshkumar M — Resume</h3>
+    <p>Data Analyst & Data Science Enthusiast<br/>Updated portfolio, skills, projects and certifications.</p>
+    <a href="Mukeshkumar_M_Resume.pdf"
+   download
+   class="btn btn-primary">
+   Download Resume
+
+</a>
+    </a>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2 class="section-title reveal">Get In Touch</h2>
+  <p class="section-sub reveal">Let's build something together</p>
+  <div class="contact-grid">
+    <div class="contact-info glass reveal">
+      <h3>Let's Connect</h3>
+      <p>I'm currently open to Data Analyst, Data Science fresher roles and internships. Feel free to reach out!</p>
+      <div class="info-item"><i class="fas fa-envelope"></i> <a href="mailto:mukeshk7660@gmail.com?subject=Hi%20Mukesh&body=Hi%20Mukesh%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect%20with%20you.%0A%0AThanks%21" target="_blank" rel="noopener">mukeshk7660@gmail.com</a></div>
+      <div class="info-item"><i class="fab fa-linkedin-in"></i> <a href="https://www.linkdin.com/in/mukeshkumar-m-0211004mk/" target="_blank" rel="noopener">linkedin.com/in/mukeshkumar-m</a></div>
+      <div class="info-item"><i class="fab fa-github"></i> <a href="https://github.com/Mukesh0228" target="_blank" rel="noopener">github.com/Mukesh0228</a></div>
+      <div class="info-item"><i class="fas fa-map-marker-alt"></i> <span>India</span></div>
+      <div class="socials" style="margin-top:auto">
+        <a href="https://www.linkedin.com/in/mukeshkumar-m-0211004mk/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Mukesh0228" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <form id="contactForm" class="contact-form glass reveal" novalidate>
+      <input type="text" name="name" placeholder="Your Name" required maxlength="100" />
+      <input type="email" name="email" placeholder="Your Email" required maxlength="200" />
+      <input type="text" name="subject" placeholder="Subject" required maxlength="150" />
+      <textarea name="message" placeholder="Your Message" required maxlength="2000"></textarea>
+      <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="logo">Mukeshkumar M</div>
+  <p>Data Scientist & Data Analyst Portfolio</p>
+  <p style="margin-top:.6rem">© <span id="year">2026</span> Mukeshkumar M — All rights reserved.</p>
+</footer>
+
+<!-- Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
