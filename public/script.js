@@ -71,12 +71,14 @@ document.querySelectorAll('a, button, .glass, .chip').forEach(el => {
 
 // ---------- Typing animation ----------
 const roles = [
-  'Data Analyst',
   'Data Science Enthusiast',
+  'Machine Learning Engineer',
+  'Data Engineer',
+  'Data Analyst',
   'Power BI Developer',
   'SQL Developer',
   'Python Developer',
-  'Machine Learning Learner'
+  
 ];
 const typingEl = document.getElementById('typing');
 let rIdx=0, cIdx=0, deleting=false;
